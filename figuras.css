@@ -44,6 +44,7 @@ html{
 }
 .nav-section ul{
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     gap: 2rem;
 }
@@ -67,7 +68,7 @@ html{
     text-align: center;
 }
 .intro-section h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 .intro-section p{
     font-size: 1.3rem;
@@ -82,7 +83,7 @@ html{
 }
 /* Diseño de cards */
 .card{
-    width: 25rem;
+    width: 29rem;
     height: 30rem;
     box-shadow: 0 0 1rem 0rem #070707e8;
     background-color: #13131300;
@@ -141,6 +142,7 @@ html{
 }
 
 .input-form{
+    width: 80%;
     border: none;
     background-color: rgba(0, 0, 0, 0.39);
     border-radius: 1rem;
