@@ -5,9 +5,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
+
+    <link rel="stylesheet" href="figuras.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Taller 1, figuras Geometricas</h1>
+    <header>
+        <nav class="nav-section">
+            <div class="logo-section">
+                <img src="./assets/img/logo.png" alt="Logo Calculadora">
+            </div>
+            <ul>
+                <li><a href="#">Geometría</a></li>
+                <li><a href="#">Descuentos</a></li>
+                <li><a href="#">Estadistica</a></li>
+                <li><a href="#">Salario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seccion principal -->
+        <section class="main-section">
+            <!-- Seccion de introducción -->
+            <section class="intro-section">
+                <h1>Figuras Geometricas</h1>
+                <p>Calcula el perimetro y el área de las siguientes figuras</p>
+            </section>
+            <!-- Seccion de cards -->
+            <section class="cards-section">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="display-card">
+                        <!-- Imagen y titulo -->
+                        <div class="card-introduction">
+                            <img src="./assets/icons/triangle.svg" alt="">
+                            <h2>Triángulo</h2>
+                        </div>
+                        <!-- instrucciones del card -->
+                        <div class="card-description">
+                            <p>Ingresa los 3 lados, del triángulo</p>
+                        </div>
+                        <!-- Form del card -->
+                        <div class="card-info">
+                            <form action="">
+                                <label for="trianguloLadoA">
+                                    <input type="number" placeholder="Lado A en cm" id="trianguloLadoA" class="input-form">
+                                    Lado A 
+                                </label>
+                                
+                                <label for="trianguloLadoB">
+                                    <input type="number" placeholder="Lado B en cm" id="trianguloLadoB" class="input-form">
+                                    Lado B
+                                </label>
+                                <label for="trianguloBase">
+                                    <input type="number" placeholder="Base en cm" id="trianguloBase" class="input-form">
+                                    Base
+                                </label>
+                                <label for="trianguloAltura">
+                                    <input type="number" placeholder="Altura en cm" id="trianguloAltura" class="input-form">
+                                    Altura
+                                </label>
+                            </form>
+                        </div>
+                        <!-- button que dispara los eventos -->
+                        <button type="button" id="calcularTriangulo" onclick="calcularAreaPerimetroTriangulo()" class="button-form">Calcular</button>
+                        <!-- P de validación de campos de formulario -->
+                        <div class="validacion-form">
+                            <p id="validacion-p-triangulo"></p>
+                        </div>
+                        <!-- P que muesta los resultados -->
+                        <div class="card-result">
+                            <p id="tringuloPerimetro">Perimetro: </p>
+                            <p id="trianguloArea">Área: </p>
+                        </div>
+                    </div>
+                    </div>
+                <!-- Fin Card 1 -->
+                <!-- Car 2 -->
+                <div class="card">
+                    <div class="display-card">
+                        <!-- Imagen y titulo -->
+                        <div class="card-introduction">
+                            <img src="./assets/icons/square.svg" alt="">
+                            <h2>Cuadrado</h2>
+                        </div>
+                        <!-- intrucciones del card -->
+                        <div class="card-description">
+                            <p>Ingresa el lado del cuadrado</p>
+                        </div>
+                        <!-- Form del card -->
+                        <div class="card-info">
+                            <form action="">
+                                <label for="cuadradoLado">
+                                    <input type="number" placeholder="Lado en cm" id="cuadradoLado" class="input-form">
+                                    Lado x
+                                </label>
+                            </form>
+                        </div>
+                        <!-- button que dispara los eventos -->
+                        <button type="button" id="calcularCuadrado" onclick="calcularAreaPerimetroCuadrado()" class="button-form">Calcular</button>
+                        <!-- P de validación de campos de formulario -->
+                        <div class="validacion-form">
+                            <p id="validacion-p-cuadrado"></p>
+                        </div>
+                        <!-- P que muesta los resultados -->
+                        <div class="card-result">
+                            <p id="cuadradoPerimetro">Perimetro: </p>
+                            <p id="cuadradoArea">Área: </p>
+                        </div>
+                    </div>
+                    </div>
+                <!-- Fin Card 2 -->
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="display-card">
+                        <!-- Imagen y titulo -->
+                        <div class="card-introduction">
+                            <img src="./assets/icons/circle.svg" alt="">
+                            <h2>Circulo</h2>
+                        </div>
+                        <!-- intrucciones del card -->
+                        <div class="card-description">
+                            <p>Ingresa el radui del circulo</p>
+                        </div>
+                        <!-- Form del card -->
+                        <div class="card-info">
+                            <form action="">
+                                <label for="circuloRadio">
+                                    <input type="number" placeholder="Lado en cm" id="circuloRadio" class="input-form">
+                                    Radio
+                                </label>
+                            </form>
+                        </div>
+                        <!-- button que dispara los eventos -->
+                        <button type="button" id="calcularCirculo" onclick="calcularAreaPerimetroCirculo()" class="button-form">Calcular</button>
+                        <!-- P de validación de campos de formulario -->
+                        <div class="validacion-form">
+                            <p id="validacion-p-circulo"></p>
+                        </div>
+                        <!-- P que muesta los resultados -->
+                        <div class="card-result">
+                            <p id="circuloPerimetro">Perimetro: </p>
+                            <p id="circuloArea">Área: </p>
+                        </div>
+                    </div>
+                    </div>
+                <!-- Fin Card 3 -->
+            </section>
+            <!-- Fin de cards-Section -->
+        </section>
+    </main>
+    <footer>
+        <section class="footer-section">
+            <h2>Hecho con ♥ por Darwing</h2>
+        </section>
+    </footer>
     <script src="figuras.js"></script>
 </body>
 </html>

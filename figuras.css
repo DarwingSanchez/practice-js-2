@@ -1,0 +1,200 @@
+:root{
+    --font-regular: 400;
+    --font-blod: 600;
+    --font-extraBlod: 800;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    height: 100%;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    background-color: #a70a85;
+    /* background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(8, 8, 26, 0.692);
+    padding-top: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+
+.nav-section .logo-section{
+    width: 7rem;
+    height: 7rem;
+}
+.nav-section .logo-section img{
+    width: 100%;
+    height: 100%;
+}
+.nav-section ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.nav-section ul li a{
+    font-size: 1.5rem;
+    font-weight: var(--font-blod);
+    text-decoration: none;
+    color: whitesmoke;
+}
+/* Empieza el main */
+.main-section{
+    padding-top: 3rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+.intro-section{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.intro-section h1{
+    font-size: 5rem;
+}
+.intro-section p{
+    font-size: 1.3rem;
+}
+
+.cards-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 1.5rem;
+    gap: 2rem;
+}
+/* Diseño de cards */
+.card{
+    width: 25rem;
+    height: 30rem;
+    box-shadow: 0 0 1rem 0rem #070707e8;
+    background-color: #13131300;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+.display-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 3.2rem);
+    justify-items: center;
+    align-items: center;
+}
+.card-introduction {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    grid-row: 1 / 2;
+}
+.card-introduction img{
+    width: 3rem;
+    height: 3rem;
+}
+.card-introduction h2{
+    font-weight: var(--font-regular);
+    font-size: 1.8rem;
+}
+.card-description{
+    text-align: center;
+    font-size: 1.3rem;
+    grid-row: 2 / 3;
+}
+.card-result{
+    width: 100%;
+    
+    grid-row: 8 / 10;
+    
+}
+.card-result p{
+    color: rgb(8, 8, 8);
+    background-color: blanchedalmond;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+}
+.card-info{
+    grid-row: 3 / 6;
+}
+
+.input-form{
+    border: none;
+    background-color: rgba(0, 0, 0, 0.39);
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.3rem;
+    color: whitesmoke;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    outline: none;
+}
+.input-form::placeholder{
+    color: rgba(247, 247, 247, 0.356);
+}
+
+.button-form{
+    width: 9rem;
+    font-size: 1.5rem;
+    background-image: linear-gradient(-225deg, #aa0555 0%, #49064d 50%, #1f0d47 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #26c4ff; */
+    color: whitesmoke;
+    font-weight: var(--font-blod);
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    grid-row: 6 / 7 ;
+}
+.button-form:active{
+    border: none;
+    background-color: #0a3342;
+}
+.validacion-form{
+    grid-row: 7 / 8;
+}
+.validacion-form p{
+    color: rgb(255, 110, 110);
+    font-size: 1.2rem;
+    font-weight: var(--font-blod);
+}
+
+/* Footer */
+.footer-section{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(8, 8, 26, 0.692);
+    background-image: linear-gradient(-225deg, #aa0555 0%, #49064d 50%, #1f0d47 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-section h2{
+    text-align: center;
+    align-self: center;
+}
+
+
