@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49017cd5ee.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -18,8 +19,11 @@
             <div class="logo-section">
                 <img src="./assets/img/logo.png" alt="Logo Calculadora">
             </div>
-            <ul>
-                <li><a href="#">Geometría</a></li>
+            <button class="toggle" onclick="cambiarStyle()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list-style" id="nav-bar-l">
+                <li><a href="index.html">Geometría</a></li>
                 <li><a href="#">Descuentos</a></li>
                 <li><a href="#">Estadistica</a></li>
                 <li><a href="#">Salario</a></li>

@@ -125,3 +125,8 @@ function calcularAreaPerimetroCirculo(){
         document.getElementById("circuloArea").innerHTML = `Área: `;
     }
 }
+
+function cambiarStyle(){
+    var element = document.getElementById("nav-bar-l");
+    element.classList.toggle('otherStyle')
+}

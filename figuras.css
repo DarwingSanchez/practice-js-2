@@ -53,6 +53,23 @@ html{
     font-weight: var(--font-blod);
     text-decoration: none;
     color: whitesmoke;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.nav-section ul li a:hover{
+    background-color: #614d8d;
+    border-radius: 1rem;
+}
+
+.nav-section .toggle{
+    color: white;
+    background: none;
+    border:none;
+    font-size: 3rem;
+    align-self: center;
+    display: none;
 }
 /* Empieza el main */
 .main-section{
@@ -113,6 +130,7 @@ html{
     width: 3rem;
     height: 3rem;
 }
+
 .card-introduction h2{
     font-weight: var(--font-regular);
     font-size: 1.8rem;
@@ -200,3 +218,31 @@ html{
 }
 
 
+@media (max-width: 650px) {
+    .nav-list-style{
+        flex-direction: column;
+        background-color: #aa0555;
+        position: fixed;
+        flex-wrap: nowrap;
+        margin: 0;
+        left: 0;
+        top: 11rem;
+        width: 100%;
+        padding: 2rem 0rem;
+        align-items: center;
+
+        height: calc(100% - 7rem);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    
+    .nav-section .toggle{
+      display: block;
+
+    }
+
+    .otherStyle{
+        left: 0;
+    }   
+}
