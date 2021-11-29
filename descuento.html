@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geometricas</title>
+
+    <link rel="stylesheet" href="./assets/style/figuras.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/49017cd5ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="nav-section">
+            <div class="logo-section">
+                <img src="./assets/img/logo.png" alt="Logo Calculadora">
+            </div>
+            <button class="toggle" onclick="cambiarStyle()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-list-style" id="nav-bar-l">
+                <li><a href="index.html">Geometría</a></li>
+                <li><a href="#">Descuentos</a></li>
+                <li><a href="#">Estadistica</a></li>
+                <li><a href="#">Salario</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Seccion principal -->
+        <section class="main-section">
+            <!-- Seccion de introducción -->
+            <section class="intro-section">
+                <h1>Calculadora de descuentos</h1>
+                <p>Calcula cuanto en cuanto queda el precio menos el descuento</p>
+            </section>
+            <!-- Seccion de cards -->
+            <section class="cards-section">
+                <!-- Inicia el card  -->
+                <div class="card">
+                    <div class="display-card">
+                        <!-- Imagen y titulo -->
+                        <div class="card-introduction">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h2>Calculadora</h2>
+                        </div>
+                        <!-- intrucciones del card -->
+                        <div class="card-description">
+                            <p>Ingresa el precio y descuento</p>
+                        </div>
+                        <!-- Form del card -->
+                        <div class="card-info">
+                            <form action="">
+                                <label for="precio">
+                                    <input type="number" placeholder="Precio" id="precio" class="input-form">
+                                    Precio $
+                                </label>
+                                <label for="descuento">
+                                    <input type="number" placeholder="Descuento" id="descuento" class="input-form">
+                                    Dcto %
+                                </label>
+                                <label for="cupon">
+                                    <input type="text" placeholder="Ingresa tu cupon" id="cupon" class="input-form">
+                                    Cupon
+                                </label>
+                            </form>
+                        </div>
+                        <!-- button que dispara los eventos -->
+                        <button type="button" id="calcularDescuento" onclick="calcularDescuento()" class="button-form">Calcular</button>
+                        <!-- P de validación de campos de formulario -->
+                        <div class="validacion-form">
+                            <p id="validacion-descuento"></p>
+                            <p id="validacion-cupon"></p>
+                        </div>
+                        <!-- P que muesta los resultados -->
+                        <div class="card-result">
+                            <p id="precioFinal">Precio final: </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Card 2 -->
+                <!-- Card 3 -->
+            </section>
+            <!-- Fin de cards-Section -->
+        </section>
+    </main>
+    <footer>
+        <section class="footer-section">
+            <h2>Hecho con ♥ por Darwing</h2>
+        </section>
+    </footer>
+    <script src="./assets/javascript/figuras.js"></script>
+    <script src="./assets/javascript/descuento.js"></script>
+</body>
+</html>
